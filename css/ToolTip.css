@@ -1,0 +1,51 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+    color:#222;
+    font-weight: 300;
+}
+.container{
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.icon {
+    width: 125px;
+    height: 125px;
+    /* width 와 height 는 이미지 크기 값 */
+    margin: 10px;
+    position: relative;
+}
+.icon span{
+    position:absolute;
+    background-color: #000;
+    color:#fff;
+    width: 300px;
+    top: -80px;
+    text-align: center;
+    padding:10px;
+    border-radius: 5px;
+    left:50%;
+    transform:translate(-50%);
+    opacity:0;
+    transition:0.5s;
+    visibility: hidden;
+}
+.icon span:after{
+    content:'';
+    position: absolute;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    transform:rotate(45deg) translateX(-50%);
+    bottom:-5px;
+    left:50%;
+
+}
+.icon:hover span{
+    opacity:1;
+    visibility: visible;
+}

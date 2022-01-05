@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .menu{
+            padding: 0;
+            list-style: none;
+            width: 200px;
+            /* border: 1px solid red; */
+        }
+        .menu li > a{
+            background-color: black;
+            color:white;
+            display: block;
+            text-align: center;
+            padding: 5px;
+            border: 1px solid #ddd;
+        }
+        .sub-menu{
+            border: 1px solid black;
+            display: none;
+        }
+        .sub-menu a{
+            display: block;
+            text-align: center;
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li>
+            <a href="#none">menu-1</a>
+            <div class="sub-menu">
+                <a href="#none">sub-menu1</a>
+                <a href="#none">sub-menu2</a>
+                <a href="#none">sub-menu3</a>
+                <a href="#none">sub-menu4</a>
+            </div>
+        </li>
+        <li>
+            <a href="#none">menu-2</a>
+            <div class="sub-menu">
+                <a href="#none">sub-menu1</a>
+                <a href="#none">sub-menu2</a>
+                <a href="#none">sub-menu3</a>
+                <a href="#none">sub-menu4</a>
+            </div>
+        </li>
+    </ul>
+    <script src="script/jquery-3.6.0.js"></script>
+    <script src="script/selct-method.js"></script>
+</body>
+</html>

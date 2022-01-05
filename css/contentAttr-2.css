@@ -1,0 +1,56 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    color:#222;
+    line-height: 1.5em;
+    font-weight: 300;
+    margin: 0;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #DCE35B, #45B649);
+}
+a{
+    color:#222;
+    text-decoration: none;
+}
+.gnb{
+    background-color: #fff;
+    padding:15px;
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.534);
+    border-radius:10px;
+}
+.gnb a{
+    width: 80px;
+    display:inline-block;
+    height: 30px;  
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+    overflow:hidden;
+}
+.gnb a:before, .gnb a:after{
+    content:attr(data-link);
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+.gnb a:before {
+    top:0;
+    left:0;
+}
+.gnb a:after{
+    top:100%;
+    left:0;
+    color:#45B649;
+}
+.gnb a:hover:before {
+    top:-100%;
+}
+.gnb a:hover:after{
+    top:0;
+
+}
