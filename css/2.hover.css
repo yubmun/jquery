@@ -1,0 +1,28 @@
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color:#222;
+}
+a{
+  text-decoration: none;
+  color:#222;
+}
+.wrap{}
+.wrap a{
+  position: relative;
+  padding-bottom: 5px;
+}
+.wrap a:before{
+  content:'';
+  position:absolute;
+  background-color: crimson;
+  height: 2px;
+  width: 0;
+  bottom:0;
+  transition:0.5s;
+}
+.wrap a:hover:before {
+  width: 100%;
+}

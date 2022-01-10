@@ -1,0 +1,44 @@
+body{
+  background-color: lightgray;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a{
+  text-decoration: none;
+  color:#222;
+}
+.wrap a{
+  width: 300px;
+  display:block;
+  height: 40px;
+  position:relative;
+  overflow:hidden;
+}
+.wrap a:before, .wrap a:after{
+  content:attr(data-text);
+  position:absolute;
+  width: inherit;
+  /* background-color: red; */
+  height: inherit;
+  text-align: center;
+  line-height:40px;
+  color:white;
+  text-transform:uppercase;
+  transition:0.3s;
+}
+.wrap a:before{
+  background-color: crimson;
+  top:0;
+}
+.wrap a:after{
+  background-color: dodgerblue;
+  top:100%;
+}
+.wrap a:hover:before{
+  top:-100%;
+}
+.wrap a:hover:after{
+  top:0%;
+}
