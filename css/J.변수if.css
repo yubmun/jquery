@@ -1,0 +1,22 @@
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container{
+  text-align: center;
+}
+.login{
+  border: 1px solid #000;
+  padding: 30px;
+}
+.login input[type=text], .login button{
+  padding: 10px;
+  outline:none;
+}
+.login button {
+  border:none;
+  border-radius: 20px;
+  cursor: pointer;
+}
