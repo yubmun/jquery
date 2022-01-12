@@ -1,0 +1,100 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-weight: 300;
+}
+section{
+  width: 800px;
+}
+.heading{}
+.tab-inner{
+  margin-top: 30px;
+}
+.btn{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+  margin-left:10px;
+}
+.btn li{
+  float:left;
+  width: 120px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  border-top: 2px solid transparent;
+  cursor: pointer;
+  background-color: #eee;
+  padding: 5px;
+}
+.btn li:last-child{
+  width: 170px;
+  border-right: none;
+}
+.btn li:hover,
+.btn li.active{
+  background-color: white;
+  border-top:2px solid red;
+}
+
+.tabs{}
+.tabs div{
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  /* height: 200px; */
+  display:none;
+}
+.tabs div.active{
+  display:block;
+}
+/* Hedading */
+.heading{
+
+}
+.heading h1{
+  font-size: 30px;
+  text-align: center;
+}
+.heading h1 span{
+  color:red;
+}
+.heading input[type=text]{
+  /* background-color: white; */
+  outline:none;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  background: #fff url(/img/search-icon.png) no-repeat center left 5px;
+  background-size:23px;
+  padding-left: 40px;
+}
+.heading input[type=text]::placeholder{
+  font-style: italic;
+  transition:0.3s;
+}
+.heading input[type=text]:focus::placeholder{
+  visibility: hidden;
+  opacity:0;
+}
+/* Tab Content */
+.tabs div h2{
+  text-align: center;
+}
+.tabs div img{
+  float:left;
+  margin-right: 10px;
+}
+.tabs div p{
+  overflow:hidden;
+}
