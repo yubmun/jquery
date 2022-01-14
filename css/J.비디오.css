@@ -14,7 +14,7 @@ a{
   text-decoration: none;
 }
 /* background video */
-.video-frame:before{
+/* .video-frame:before{
   content:'';
   background:linear-gradient(-135deg, crimson, transparent);
   position:absolute;
@@ -22,7 +22,7 @@ a{
   height: 100%;
   top:0;
   left:0;
-}
+} */
 .video-frame video{
   position: fixed;
   min-width: 100%;
