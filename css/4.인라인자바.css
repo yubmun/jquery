@@ -1,0 +1,17 @@
+.content{
+  width: 800px;
+  height: 800px;
+  border: 1px solid #000;
+  cursor: pointer;
+  position: relative;
+}
+.content h1{
+  text-align: center;
+}
+.content a{
+  position:absolute;
+  bottom:0;
+  right:0;
+  text-decoration: none;
+  color:#222;
+}
