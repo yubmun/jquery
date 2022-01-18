@@ -1,3 +1,6 @@
 ul + p{
   color:red;
 }
+ul ~ p{
+  color:blue;
+}
