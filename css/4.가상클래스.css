@@ -6,7 +6,7 @@
 ul{
   list-style: decimal;
 }
-ul li:after{
+ul li.new:after{
   content:'new';
   background-color: dodgerblue;
   color:white;
@@ -15,7 +15,7 @@ ul li:after{
   padding: 0 5px;
   margin-left:5px;
 }
-ul li:before{
+ul li.hot:before{
   content:'hot';
   background-color: red;
   color:white;
