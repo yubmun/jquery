@@ -4,10 +4,6 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <link rel="stylesheet" href="css/4.모달창.css">
-  <script src="/script/jquery-3.6.0.js"></script>
-</head>
-<body>
-  <button class="btn-open">뉴스레터 구독하기</button>
   <div class="modal">
     <div class="modal-content">
       <div class="photo"></div>
@@ -27,14 +23,5 @@
     </div>
   </div>
   <div class="overlay"></div>
-
-  <script>
-    $('.btn-open').click(function(){
-      $('.modal, .overlay').addClass('active')
-    })
-    $('.btn-close, .overlay').click(function(){
-      $('.modal, .overlay').removeClass('active')
-    })
-  </script>
 </body>
 </html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="css/J.어코디언.css">
+</head>
+<body>
+  <section>
+    <article>
+      <div class="heading">
+        <span>하드코딩 실력이 진짜 퍼블리싱 실력이랍니다.</span>
+        <h1> <em>카톡</em> 간편 회원가입, <b>아코디언 기능</b> 실습문제입니다</h1>
+      </div>
+      <div class="content">
+        <div class="accordion">
+          <div class="title active" data-img="/img/app-capture-01.png">코딩실력을 늘려야된다</div>
+          <div class="desc active">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br><br> Ad doloremque consequuntur nesciunt eius quo facere reprehenderit libero corporis voluptate nihil?Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, pariatur!
+          </div>
+          <div class="title" data-img="/img/app-capture-02.png">2번째 코딩실력을 늘려야된다</div>
+          <div class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br><br> Ad doloremque consequuntur nesciunt eius quo facere reprehenderit libero corporis voluptate nihil?Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, pariatur!
+          </div>
+          <div class="title" data-img="/img/app-capture-03.png">3번째 코딩실력을 늘려야된다</div>
+          <div class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br><br> Ad doloremque consequuntur nesciunt eius quo facere reprehenderit libero corporis voluptate nihil?Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, pariatur!
+          </div>
+          <div class="title" data-img="/img/app-capture-04.png">4번째 코딩실력을 늘려야된다</div>
+          <div class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br><br> Ad doloremque consequuntur nesciunt eius quo facere reprehenderit libero corporis voluptate nihil?Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, pariatur!
+          </div>
+        </div>
+        <div class="image">
+          <img src="/img/app-capture-01.png">
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <script>
+    $('.title').click(function(){
+      $(this).addClass('active')
+      $(this).siblings('.title').removeClass('active')
+      $(this).siblings('.desc').stop().slideUp()
+      $(this).next().stop().slideDown()
+      var dataImage = $(this).attr('data-img')
+      $('.image img').attr('src', dataImage)
+    })
+  </script>
+</body>
+</html>

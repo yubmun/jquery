@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* hot new */
+ul{
+  list-style: decimal;
+}
+ul li.new:after{
+  content:'new';
+  background-color: dodgerblue;
+  color:white;
+  border-radius: 30px;
+  font-size: 13px;
+  padding: 0 5px;
+  margin-left:5px;
+}
+ul li.hot:before{
+  content:'hot';
+  background-color: red;
+  color:white;
+  border-radius: 30px;
+  font-size: 13px;
+  padding:0 5px;
+  margin-right:5px;
+}
+
+/* 별표 주문불가 */
+.second div{
+  margin-left:20px;
+}
+.second div:after{
+  content:'주문불가';
+  color:red;
+  font-size: 12px;
+  margin-left: 5px;
+}
+.second div:before{
+  content:'*';
+  color:dodgerblue;
+  margin-right:5px;
+}
+
+/* Breadcrumb */
+.third{
+  margin-top:30px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.third a{
+  text-decoration: none;
+  color:black;
+}
+.third a:after{
+  content:'\f105';
+  font-family: fontawesome;
+  margin-left:5px;
+}
+.third a:last-child:after{
+  content:'';
+}

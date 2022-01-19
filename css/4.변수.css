@@ -1,0 +1,50 @@
+.parent{
+  --pwidth: 300px;
+  width: calc(var(--pwidth));
+  height: 100px;
+  margin: auto;
+  background-color: red;
+}
+
+/* 버튼 */
+:root{
+  --primary: royalblue;
+  --secondary:black;
+  --positive: yellowgreen;
+  --negative: red;
+}
+.btn{
+  border: none;
+  padding:5px 20px;
+  border-radius: 5px;
+  color:white;
+}
+
+.btn.primary{
+  background-color: var(--primary);
+}
+.btn.secondary{
+  background-color: var(--secondary);
+}
+.btn.positive{
+  background-color: var(--positive);
+}
+.btn.negative{
+  background-color: var(--negative);
+}
+/* 폰트 */
+:root{
+  --big: 50px;
+  --medium:30px;
+  --small:14px;
+}
+
+.container h1{
+  font-size: var(--big);
+}
+.container h3{
+  font-size: var(--medium);
+}
+.container p{
+  font-size: var(--small);
+}

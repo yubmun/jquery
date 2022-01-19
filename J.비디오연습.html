@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="/css/J.비디오연습.css">
+</head>
+<body>
+  <div class="container">
+    <div class="video-frame">
+      <video src="/img/apple.mp4" autoplay muted loop></video>
+    </div>
+    <div class="heading">
+      <h1>세화네 <span>'사과농장'</span></h1>
+      <p>
+        설 연휴 주문 폭주로 인해<br> 배송이 지연되고 있습니다.
+      </p>
+    </div>
+    <div class="menuInfo">
+      <h1>여기를 클릭하세요-></h1>
+    </div>
+    <div class="menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="contentWrap">
+      <div class="content">
+        <a href="#none">판매상품</a>
+        <a href="#none">판매안내</a>
+        <a href="#none">농장위치</a>
+        <a href="#none">문의사항</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('.menu').click(function(){
+      $(this).toggleClass('active')
+      $('.contentWrap').fadeToggle()
+      $('.menuInfo').fadeToggle()
+    })
+  </script>
+</body>
+</html>

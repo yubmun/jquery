@@ -1,0 +1,21 @@
+header a{
+  background-color: teal;
+  color:white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+.btn-gototop{
+  background-color: pink;
+  color:white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+html{
+  scroll-behavior: smooth;
+}

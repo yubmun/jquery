@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="css/J.탭메뉴2.css">
+</head>
+<body>
+  <section>
+    <div class="heading">
+      <h1>
+        <span>코딩웍스</span>, 프론트엔드 퍼블리셔 취업을 위한 실전 퍼블리싱 강좌
+      </h1>
+      <input type="text" placeholder="What are you looking for?">
+    </div>
+    <div class="tab-inner">
+      <ul class="btn">
+        <li data-alt="tab1" class="active">HTML5</li>
+        <li data-alt="tab2">CSS3</li>
+        <li data-alt="tab3">jQuery</li>
+        <li data-alt="tab4">JavaScript</li>
+        <li data-alt="tab5">CSS3 Frameworks</li>
+      </ul>
+      <div class="tabs">
+        <div id="tab1" class="active">
+          <h2>HTML5</h2>
+          <img src="/img/platform-logo-01.png">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt molestiae libero iure ipsum, ipsam laboriosam ab expedita accusamus fugit, inventore tempora quaerat amet odio repellendus autem neque cupiditate. Praesentium facere quae nam nulla, deserunt provident excepturi minima aperiam, quaerat odio nesciunt blanditiis tempore quo sit. Ex sequi nulla eum aliquid. Autem eum recusandae ea a rerum dolor maxime eveniet sint voluptatibus incidunt voluptate repudiandae excepturi vero vel eaque iusto ipsam ad, labore unde ipsa velit doloribus. Dolores nam, iusto maxime iste explicabo omnis, molestias doloribus ab animi numquam voluptas? Voluptates totam temporibus deserunt perferendis esse velit numquam dolorum officia sunt!
+          </p>
+        </div>
+        <div id="tab2">
+          <h2>CSS3</h2>
+          <img src="/img/platform-logo-02.png">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt molestiae libero iure ipsum, ipsam laboriosam ab expedita accusamus fugit, inventore tempora quaerat amet odio repellendus autem neque cupiditate. Praesentium facere quae nam nulla, deserunt provident excepturi minima aperiam, quaerat odio nesciunt blanditiis tempore quo sit. Ex sequi nulla eum aliquid. Autem eum recusandae ea a rerum dolor maxime eveniet sint voluptatibus incidunt voluptate repudiandae excepturi vero vel eaque iusto ipsam ad, labore unde ipsa velit doloribus. Dolores nam, iusto maxime iste explicabo omnis, molestias doloribus ab animi numquam voluptas? Voluptates totam temporibus deserunt perferendis esse velit numquam dolorum officia sunt!
+          </p>
+        </div>
+        <div id="tab3">
+          <h2>jQuery</h2>
+          <img src="/img/platform-logo-03.png">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt molestiae libero iure ipsum, ipsam laboriosam ab expedita accusamus fugit, inventore tempora quaerat amet odio repellendus autem neque cupiditate. Praesentium facere quae nam nulla, deserunt provident excepturi minima aperiam, quaerat odio nesciunt blanditiis tempore quo sit. Ex sequi nulla eum aliquid. Autem eum recusandae ea a rerum dolor maxime eveniet sint voluptatibus incidunt voluptate repudiandae excepturi vero vel eaque iusto ipsam ad, labore unde ipsa velit doloribus. Dolores nam, iusto maxime iste explicabo omnis, molestias doloribus ab animi numquam voluptas? Voluptates totam temporibus deserunt perferendis esse velit numquam dolorum officia sunt!
+          </p>
+        </div>
+        <div id="tab4">
+          <h2>JavaScript</h2>
+          <img src="/img/platform-logo-04.png">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt molestiae libero iure ipsum, ipsam laboriosam ab expedita accusamus fugit, inventore tempora quaerat amet odio repellendus autem neque cupiditate. Praesentium facere quae nam nulla, deserunt provident excepturi minima aperiam, quaerat odio nesciunt blanditiis tempore quo sit. Ex sequi nulla eum aliquid. Autem eum recusandae ea a rerum dolor maxime eveniet sint voluptatibus incidunt voluptate repudiandae excepturi vero vel eaque iusto ipsam ad, labore unde ipsa velit doloribus. Dolores nam, iusto maxime iste explicabo omnis, molestias doloribus ab animi numquam voluptas? Voluptates totam temporibus deserunt perferendis esse velit numquam dolorum officia sunt!
+          </p>
+        </div>
+        <div id="tab5">
+          <h2>CSS3 Frameworks</h2>
+          <img src="/img/platform-logo-05.png">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt molestiae libero iure ipsum, ipsam laboriosam ab expedita accusamus fugit, inventore tempora quaerat amet odio repellendus autem neque cupiditate. Praesentium facere quae nam nulla, deserunt provident excepturi minima aperiam, quaerat odio nesciunt blanditiis tempore quo sit. Ex sequi nulla eum aliquid. Autem eum recusandae ea a rerum dolor maxime eveniet sint voluptatibus incidunt voluptate repudiandae excepturi vero vel eaque iusto ipsam ad, labore unde ipsa velit doloribus. Dolores nam, iusto maxime iste explicabo omnis, molestias doloribus ab animi numquam voluptas? Voluptates totam temporibus deserunt perferendis esse velit numquam dolorum officia sunt!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.btn li').click(function(){
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+
+      var result = $(this).attr('data-alt')
+      $('#'+ result).addClass('active')
+      $('#' + result).siblings().removeClass('active')
+    })
+  </script>
+</body>
+</html>

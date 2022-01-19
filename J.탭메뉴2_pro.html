@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="css/J.탭메뉴2_pro.css">
+</head>
+<body>
+  <section>
+    <ul class="btn">
+      <li data-alt="tab1" class="active">HTML5</li>
+      <li data-alt="tab2">CSS3</li>
+      <li data-alt="tab3">jQuery</li>
+      <li data-alt="tab4">JavaScript</li>
+      <li data-alt="tab5">CSS Frameworks</li>
+    </ul>
+    <div class="tabs">
+      <div id="tab1" class="active">tab1</div>
+      <div id="tab2">tab2</div>
+      <div id="tab3">tab3</div>
+      <div id="tab4">tab4</div>
+      <div id="tab5">tab5</div>
+    </div>
+  </section>
+
+  <script>
+    $('.btn li').click(function(){
+      $(this).addClass('active')
+      $(this).siblings('li').removeClass('active')
+      var tab = $(this).attr('data-alt')
+      $('#'+ tab).addClass('active')
+      $('#' + tab).siblings().removeClass('active')
+    })
+  </script>
+</body>
+</html>

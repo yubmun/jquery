@@ -1,0 +1,15 @@
+span{
+  border: 1px solid #000;
+}
+h1{
+  border: 1px solid red;
+}
+img{
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+}
+div{
+  border: 1px solid blue;
+  display:inline-block;
+}

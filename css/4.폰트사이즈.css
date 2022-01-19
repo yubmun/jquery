@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+html{
+  font-size: 20px;
+}
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+}
+.box-em{
+  font-size: 20px;
+}
+.box-em h1{}
+.box-em p{
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.box-rem{
+  font-size: 40px;
+}
+.box-rem p{
+  font-size: 1rem;
+}
