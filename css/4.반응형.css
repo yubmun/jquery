@@ -1,0 +1,65 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+  margin: 0;
+}
+
+header{
+  color:white;
+  text-align: center;
+  font-size: 20px;
+  position: fixed;
+  width: 100%;
+  top:0;
+  left:0;
+}
+.lnb-inner{
+  background-color: red;
+  height: 30px;
+  line-height: 30px;
+  transition:.3s;
+}
+.gnb-inner{
+  background-color: black;
+  height: 80px;
+  line-height: 80px;
+  transition:.3s;
+}
+.btn-top{
+  position: fixed;
+  right:20px;
+  bottom:20px;
+  font-size: 40px;
+  color:white;
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 46px;
+  transform:translateY(100px);
+  opacity:0;
+}
+
+section p{
+  font-size: 3em;
+  color:#ddd;
+  line-height: 2em;
+}
+
+/* active */
+
+header.active .lnb-inner{
+  /* display:none; */
+  height: 0;
+  overflow: hidden;
+}
+header.active .gnb-inner{
+  background-color: white;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.075);
+  color:black;
+}
+.btn-top.active{
+  transform:translateY(0);
+  opacity:1;
+}
