@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/4.콘텐츠슬라이더.css">
+  <script src="/script/jquery-3.6.0.js"></script>
+  <link rel="stylesheet" href="/slick/slick-theme.css">
+  <link rel="stylesheet" href="/slick/slick.css">
+  <script src="/slick/slick.js"></script>
+</head>
+<body>
+  <div class="myslider">
+    <div>Slide Content1</div>
+    <div>Slide Content2</div>
+    <div>Slide Content3</div>
+    <div>Slide Content4</div>
+    <div>Slide Content5</div>
+    <div>Slide Content6</div>
+    <div>Slide Content7</div>
+    <div>Slide Content8</div>
+    <div>Slide Content9</div>
+  </div>
+  <script>
+  $('.myslider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 500,
+    fade: false,
+    cssEase: 'linear',
+    dots:true,
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+  });
+  </script>
+</body>
+</html>

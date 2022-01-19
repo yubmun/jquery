@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/4.wow.css">
+  <script src="/script/wow.js"></script>
+</head>
+<body>
+  <h1>Scroll Reveal Animation</h1>
+  <img src="http://placehold.it/800x1500">
+  <div class="parent">
+    <div class="left ltr wow">left</div>
+    <div class="right rtl wow">right</div>
+  </div>
+  <img src="http://placehold.it/800x500">
+  <div class="parent">
+    <div class="left ltr wow">left</div>
+    <div class="right rtl wow">right</div>
+  </div>
+  <img src="http://placehold.it/800x500">
+
+  <script>
+    wow = new WOW(
+      {
+      boxClass: 'wow',      // default
+      // animateClass: 'animated', // default
+      offset: 200,          // default
+      mobile: false,       // default
+      live: true        // default
+      }
+    )
+    wow.init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/4.반응형.css">
+  <script src="/script/jquery-3.6.0.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="lnb-inner">LNB inner</div>
+      <div class="gnb-inner">GNB inner</div>
+    </header>
+    <section>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae incidunt eligendi explicabo. Hic quibusdam eligendi consequuntur odio. Delectus culpa deleniti doloremque dolore voluptatum repellendus et provident. Aspernatur totam soluta inventore in, sed odio. Vel animi quo, fugiat dolores, optio eveniet iste saepe obcaecati quaerat hic recusandae dolorum. Officiis at dicta nemo culpa, blanditiis qui molestias iusto dolor esse vel deleniti tenetur vitae delectus sapiente illum minima dolores assumenda. Obcaecati, quod neque cumque recusandae facilis illum repellendus odio ut eveniet fugiat consectetur omnis quasi unde laudantium quos voluptatibus possimus nesciunt earum vel aspernatur. Doloribus placeat inventore sequi fugiat, quos totam? Praesentium.
+      </p>
+    </section>
+  </div>
+
+  <a href="#" class="btn-top"><i class="fa fa-arrow-up"></i></a>
+
+  <script>
+    // header active class
+    $(window).scroll(function(){
+      if($(window).scrollTop() > 50){
+        $('header, .btn-top').addClass('active')
+      }
+      else{
+        $('header, .btn-top').removeClass('active')
+      }
+    })
+  </script>
+</body>
+</html>
