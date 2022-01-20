@@ -1,0 +1,46 @@
+.parent{
+  border: 5px solid #000;
+  width: 1280px;
+  display:flex;
+}
+.parent div{
+  border: 5px solid red;
+  height: 200px;
+  flex:1;
+}
+/* card */
+.card{
+  border: 1px solid #000;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card h1 {
+  margin: 0;
+}
+.content{
+  border: 1px solid #000;
+  width:70%;
+}
+/* 가로배치 */
+.parent2{
+  border: 1px solid #000;
+  width: 800px;
+  margin-top: 30px;
+  display:flex;
+}
+.child1, .child2{
+  border: 1px solid red;
+  height: 150px;
+  flex:1;
+}
+.child1{
+  order:2;
+}
+.child2{
+  order:1;
+}
